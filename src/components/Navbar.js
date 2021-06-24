@@ -23,7 +23,7 @@ const NavMenu=styled.div`
 const Navbar = () => {
     return (
         <Nav>
-            <Logo>JDMarket</Logo>
+            <Logo>JDM</Logo>
             <MenuBars />
             <NavMenu></NavMenu>
             <h1>Navbar</h1>
