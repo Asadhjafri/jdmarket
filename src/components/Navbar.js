@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import { menuData } from '../data/MenuData';
+import { Button } from './Button';
 
 
 const Nav = styled.nav`
@@ -23,7 +24,7 @@ const NavLink = css `
     height:100%;
     cursor:pointer;
     text-decoration:none;
-`
+`;
 
 const Logo = styled(Link)`
     ${NavLink};
@@ -37,18 +38,24 @@ const MenuBars=styled.i`
 const NavMenu=styled.div`
     display:flex;
     align-items:center;
-    
+
 `;
 
 const NavMenuLinks=styled(Link)`
     ${NavLink};
 
-`
+`;
+
+const NavBtn=styled.div`
+    display:flex;
+    align-items:center;
+    margin-right:24px;
+`;
 
 const Navbar = () => {
     return (
         <Nav>
-            <Logo to="/">JDM</Logo>
+            <Logo to="/">JDM マチセチミ</Logo>
             <MenuBars />
             <NavMenu>
                 {menuData.map((item, index) => (
@@ -57,8 +64,13 @@ const Navbar = () => {
                     </NavMenuLinks>
                 ))}
             </NavMenu>
+            <NavBtn>
+                <Button to='/contact'>
+                    Contact Us
+                </Button>
+            </NavBtn>
         </Nav>
     )
-}
+};
 
 export default Navbar;
