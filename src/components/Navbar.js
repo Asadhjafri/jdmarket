@@ -13,7 +13,7 @@ const Nav = styled.nav`
     z-index:100;
     position:fixed;
     width:100%;
-    background:#000;
+    background:#8FBC8F;
 `;
 
 const NavLink = css `
@@ -38,7 +38,7 @@ const MenuBars=styled.i`
 const NavMenu=styled.div`
     display:flex;
     align-items:center;
-
+    margin-right:-20px;
 `;
 
 const NavMenuLinks=styled(Link)`
@@ -65,7 +65,7 @@ const Navbar = () => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to='/contact'>
+                <Button to='/contact' primary='true'>
                     Contact Us
                 </Button>
             </NavBtn>

@@ -19,7 +19,11 @@ export const Button = styled(Link)`
     padding: ${({ large }) => (large ? '16px 40px' : '14px 24px')};
     color: ${({ primary }) => (primary ? '#fff' : '#000d1a' )};
     font-size:${({large}) =>(large? '20px' : '14px' )};
-`
+
+    &:hover {
+        transform:translateY(-2px);
+    }
+`;
 
 
 
