@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components/macro'
 
+// styling section for slider dimensions.
 const HeroSection = styled.section`
     height:100vh;
     max-height:1100px;
@@ -8,6 +9,7 @@ const HeroSection = styled.section`
     overflow:hidden;
 `;
 
+// styling for content in slider section.
 const HeroWrapper = styled.div`
     width:100%;
     height:100%;
