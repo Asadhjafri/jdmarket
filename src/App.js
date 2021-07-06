@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "./components/Navbar"
+import HeroSlide from './components/HeroSlide'
 import GlobalStyle from './GlobalStyles'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <GlobalStyle />
       <Navbar />
+      <HeroSlide />
     </>
   );
 }

@@ -35,6 +35,7 @@ const Logo = styled(Link)`
     font-style:italic;
 `;
 
+// set media query for navlinks to change to menu bars for mobile/tablet.
 const MenuBars=styled.i`
     display:none;
 
@@ -48,6 +49,7 @@ const MenuBars=styled.i`
         position:absolute;
         right: 100px;
         top:33px;
+        ${'' /* transform:translate(1425%, 65%) */}
     }
 `;
 
