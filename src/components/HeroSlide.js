@@ -20,11 +20,27 @@ const HeroWrapper = styled.div`
     position:relative;
 `;
 
+const HeroSlide = styled.div``
+const HeroSlider = styled.div``
+const HeroImage = styled.img``
+const HeroContent = styled.div``
+
 const HeroSlide = () => {
     return (
         <HeroSection>
             <HeroWrapper>
-                <h1>Hanjii</h1>
+                {slides.map((slide, index) => {
+                    return (
+                        <HeroSlide key=index>
+                            <HeroSlider>
+                                <HeroImage />
+                                    <HeroContent>
+                                        <h1>{slide.title}</h1>
+                                    </HeroContent>
+                            </HeroSlider>
+                        </HeroSlide>
+                    )
+                })}
             </HeroWrapper>
         </HeroSection>
     );
